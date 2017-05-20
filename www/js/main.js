@@ -22,7 +22,7 @@ rutaApp.config(function ($routeProvider) {
             controller: 'contactController'
         })
         .when('/reto-autos', {
-            templateUrl : 'pages/reto-autos.html',
+            templateUrl : 'pages/reto_autos.html',
             controller 	: 'autoController'
         })
         .when('/reto_calle', {
