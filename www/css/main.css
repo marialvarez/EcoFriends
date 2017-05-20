@@ -13,6 +13,24 @@
     src: url(../fonts/Open_Sans/OpenSans-Semibold.ttf);
     font-weight: bold;
 }
+/*-----------------PORTADA-----------------------*/
+* {
+    font-family: 'Opens-Sans', sans-serif;
+}
+.portada .info {
+    position: relative;
+    bottom: 0;
+    height: 110px;
+}
+.portada .points{
+    border-radius: 100%;
+    border: 5px solid #de983a;
+    padding: 20px 30px;
+    float: right;
+    position: relative;
+    bottom: 120px;
+}
+
 
 .registro h1{
     font-family: 'Open-Sans';
