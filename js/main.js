@@ -1,17 +1,17 @@
 // Creación del módulo
-var angularRoutingApp = angular.module('angularRoutingApp', ['ngRoute']);
+var rutaApp = angular.module('rutaApp', ['ngRoute']);
 
 // Configuración de las rutas
-angularRoutingApp.config(function($routeProvider) {
+rutaApp.config(function($routeProvider) {
 
 	$routeProvider
 		.when('/', {
-			templateUrl	: 'pages/home.html',
-			controller 	: 'mainController'
+			templateUrl	: 'pages/registro.html',
+			controller 	: 'registroController',
 		})
-		.when('/acerca', {
-			templateUrl : 'pages/acerca.html',
-			controller 	: 'aboutController'
+		.when('/retosParaHoy', {
+			templateUrl : 'pages/retosParaHoy.html',
+			controller 	: 'retosHoyController'
 		})
 		.when('/contacto', {
 			templateUrl : 'pages/contacto.html',
@@ -23,14 +23,14 @@ angularRoutingApp.config(function($routeProvider) {
 });
 
 
-angularRoutingApp.controller('mainController', function($scope) {
+rutaApp.controller('registroController', function($scope) {
 	$scope.message = 'Hola, Mundo!';
 });
 
-angularRoutingApp.controller('aboutController', function($scope) {
-	$scope.message = 'Esta es la página "Acerca de"';
+rutaApp.controller('retosHoyController', function($scope) {
+	$scope.message = 'Estos son los retos de hoy';
 });
 
-angularRoutingApp.controller('contactController', function($scope) {
+rutaApp.controller('contactController', function($scope) {
 	$scope.message = 'Esta es la página de "Contacto", aquí podemos poner un formulario';
 });
