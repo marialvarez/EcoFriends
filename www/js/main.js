@@ -35,6 +35,10 @@ rutaApp.controller('retosHoyController', function($scope) {
 //	$scope.message = 'Estos son los retos de hoy';
 });
 
+rutaApp.controller('detalleRetoController', function($scope) {
+//	$scope.message = 'Estos son los retos de hoy';
+});
+
 rutaApp.controller('contactController', function($scope) {
 	$scope.message = 'Esta es la página de "Contacto", aquí podemos poner un formulario';
 });

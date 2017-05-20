@@ -1,6 +1,9 @@
 <div class="portada">
 <div class="nav-bar">
-    Detalle reto
+    <button class="back block"><i class="icon-angle-left"></i></button>
+    <div class="block">
+        Detalle reto
+    </div>
 </div>
 
     <div class="container">
@@ -28,3 +31,9 @@
     </ul>
 
 </div>
+<script>
+    $('.back').click(function(){
+        console.log('asdf');
+        history.back();
+    });
+</script>
