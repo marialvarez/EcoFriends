@@ -46,7 +46,7 @@ rutaApp.controller('retosHoyController', function($scope) {
 //	$scope.message = 'Estos son los retos de hoy';
     $scope.retosIndividuales = [
         {
-            path:'#ruta',
+            path:'#detalle-reto',
             title:'Carrera en la ducha',
             resume:'Controla el tiempo que estás en la ducha',
             description:'Tomar toda la ducha'
