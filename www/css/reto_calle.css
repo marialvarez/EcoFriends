@@ -1,0 +1,36 @@
+.botella{
+/*    background-color: #000;*/
+}
+
+.pregunta{
+    font-size: 16px;
+    padding: 20px 15px;
+    background-color: #f07927;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.botella img{
+    width: 90px;
+}
+
+#botellas table{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px 0px;
+}
+#botellas table tr th{
+    padding: 6px;
+}
+
+#pop buttom{
+    background-color: #FBAA2A;
+    padding: 10px 50px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
