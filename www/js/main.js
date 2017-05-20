@@ -17,6 +17,10 @@ rutaApp.config(function($routeProvider) {
             templateUrl : 'pages/detalle-reto.html',
             controller 	: 'detalleRetoController'
         })
+        .when('/reto-auto', {
+            templateUrl : 'pages/detalle-reto.html',
+            controller 	: 'detalleRetoController'
+        })
 		.when('/contacto', {
 			templateUrl : 'pages/contacto.html',
 			controller 	: 'contactController'
@@ -33,6 +37,40 @@ rutaApp.controller('registroController', function($scope) {
 
 rutaApp.controller('retosHoyController', function($scope) {
 //	$scope.message = 'Estos son los retos de hoy';
+    $scope.retosIndividuales = [
+        {
+            path:'#ruta',
+            title:'Carrera en la ducha',
+            resume:'Controla el tiempo que estás en la ducha',
+            description:'Tomar toda la ducha'
+        },
+        {
+            path:'#ruta',
+            title:'Come saludable',
+            resume:'Reto de la ducha',
+            description:'Tomar toda la ducha'
+        },
+        {
+            path:'#ruta',
+            title:'Si ya cargo desconectalo',
+            resume:'Reto de la ducha',
+            description:'Tomar toda la ducha'
+        },
+        {
+            path:'#ruta',
+            title:'Reto de la ducha',
+            resume:'Reto de la ducha',
+            description:'Tomar toda la ducha'
+        }
+    ];
+    $scope.retosGrupales = [
+        {
+            path:'#ruta',
+            title:'Limpia un punto negro',
+            resume:'Elige',
+            description:'Tomar toda la ducha'
+        }
+    ];
 });
 
 rutaApp.controller('detalleRetoController', function($scope) {
@@ -46,10 +84,7 @@ rutaApp.controller('contactController', function($scope) {
 $(document).ready(initApp);
 
 function initApp() {
-    console.log('asdf');
-
     $('body').on('click', '.back', function () {
-        console.log('asdf');
         history.back();
     });
 }
