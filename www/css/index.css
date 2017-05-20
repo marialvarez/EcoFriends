@@ -3,7 +3,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; font-size: 14px; height: 100%; margin: 0; padding: 0; font-family: "Open Sans", sans-serif; width: 100%; }
+body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; font-size: 15px; height: 100%; margin: 0; padding: 0; font-family: "Open Sans", sans-serif; width: 100%; }
 body.home{
     background: #000 url("../img/slides/slide_aqp.jpg") no-repeat fixed; background-size: cover;
 }
@@ -59,7 +59,7 @@ hr
 
 .nav-footer
 {
-    position: absolute;
+    position: fixed;
     width:100%;
     bottom: 0;
     z-index: 999;
@@ -281,7 +281,7 @@ hr
 .list-news li:before, .list-news li:after { content: ' '; display: table; clear: both; }
 .list-news li p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin: 0; opacity: 0.6; }
 .list-news li small { position: absolute; bottom: 0; font-size:11px; line-height:11px; color: #FFF; }
-.list-news li img { width: 80px; float: left; margin-right: 10px; }
+.list-news li img { width: 40px; float: left; margin-right: 10px; }
 .list-news li .title { font-size: 13px; text-transform: uppercase; margin: 0 0 5px 0; max-height: 30px; overflow: hidden; font-weight:600; }
 
 
