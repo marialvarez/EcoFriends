@@ -1,0 +1,30 @@
+{
+    "name": "easyturism",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "cordova-android": "~6.1.2",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-whitelist": "1",
+        "interact.js": "^1.2.8",
+        "jquery": "^3.2.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "cordova": {
+        "platforms": [
+            "android",
+            "ios"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-device": {}
+        }
+    }
+}
