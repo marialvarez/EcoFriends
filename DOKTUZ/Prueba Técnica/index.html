@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Reserva de Citas</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/select2.min.css">
+        <link rel="stylesheet" href="css/reservaDeCitas.css">  
+    </head>
+    
+    <body ng-app="app" ng-controller="readyController">
+       
+        <!-- CuerpoDeControlador -->
+        <div ng-controller="mainController" id="appointmentBook">
+            
+            <h3 class="headerTitle">Book an Appointment</h3>
+            
+            <div class="calendarContent">
+                <form>
+
+                    <!-- Insurance selector -->
+                    <div class="insuranceSelector">
+                        <select class="js-example-basic-single form-control" >
+                         
+                          <optgroup label="Planes Populares">
+                             
+                              <option value="CDC">Cigna Dental Care HMO</option>
+                              <option value="CDP">Cigna Dental PPO</option>
+                              <option value="CT">CIGNA Traditional</option>
+                              <option value="CPS">CIGNAPlus Savings</option>
+                              
+                          </optgroup>
+                          
+                          <optgroup label="All Visit Reasons">
+                             
+                              <option value="CP">Apnea del Sueño</option>
+                              <option value="CDPO">Blanqueamiento Dental</option>
+                              <option value="">Chapas</option>
+                              <option value="WY">Chequeo de Retenedores</option>
+                              <option value="WY">Conducto Radicular</option>
+                              <option value="WY">Consulta Dentista Cosmético</option>
+                              <option value="WY">Consulta de Frenos</option>
+                              <option value="WY">Coronilla</option>
+                              <option value="WY">Dentaduras postizas</option>
+                              <option value="WY">Diente Roto</option>
+                              <option value="WY">Emergencia Dental</option>
+                              <option value="WY">Extracción de Diente</option>
+                              <option value="WY">Implantes</option>
+                              
+                          </optgroup>
+                          
+                        </select>
+                    </div>
+                    <!-- Reason selector -->
+                    <div class="reasonSelector">
+                        <label for="">Whats the reason for your visit?</label>
+                        <select class="js-example-basic-single form-control" >
+                         
+                          <optgroup label="Popular Visit Reasons">
+                             
+                              <option value="CDC">Consulta Dental</option>
+                              <option value="CDP">Limpieza Dental</option>
+                              <option value="CT">Limpieza Dental/Visita Preventiva</option>
+                              <option value="CPS">Empaste Dental</option>
+                              <option value="CPS">Examen de Nuevo Paciente</option>
+                              
+                          </optgroup>
+                          
+                          <optgroup label="">
+                             
+                              <option value="CP">Choice Plus</option>
+                              <option value="CDPO">Cigna Dental PPO</option>
+                              <option value="">Cigna Dental EPO</option>
+                              <option value="WY">Cigna Dental Family</option>
+                              
+                          </optgroup>
+                          
+                        </select>
+                    </div>
+
+                    <div>
+
+                        <!-- Address -->
+                        <span class="address">60 East 56th Street, Suite 501, New York, NY, 10022</span>
+
+                        <!-- Schedule selector -->
+                        <div>
+
+                            <table>
+                                <tr>
+                                    <th ng-click="methods.loadPrevDays()">
+                                        <a href="" class="iconHover">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                    </th>
+                                    <th ng-repeat="d in attributes.currentDatesList">
+                                        <span class="dateDay">{{ d.dateDay }}</span>
+                                        <br>
+                                        <span class="dateDay">{{ d.prettyDate }}</span>
+                                    </th>
+                                    <th ng-click="methods.loadNextDays()">
+                                        <a href="" class="iconHover">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">9:00</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">9:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">9:40</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">9:45</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">10:30</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">10:30</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">11:15</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">11:15</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack" ng-click="show = !show" >more</td>
+                                    <td>-</td>
+                                    <td class="yellowBack" ng-click="show = !show">more</td>
+                                    <td></td>
+                                </tr>
+                                <tr ng-show="show">
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">12:00</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">12:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr ng-show="show">
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">12:45</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">12:45</td>
+                                    <td></td>
+                                </tr>
+                                <tr ng-show="show">
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">1:30</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">1:15</td>
+                                    <td></td>
+                                </tr>
+                                <tr ng-show="show">
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">2:15</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">3:00</td>
+                                    <td></td>
+                                </tr>
+                                <tr ng-show="show">
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">3:00</td>
+                                    <td>-</td>
+                                    <td class="yellowBack">3:45</td>
+                                    <td></td>
+                                </tr>
+                                <tr ng-show="show">
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">3:45</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr ng-show="show">
+                                    <td></td>
+                                    <td>-</td>
+                                    <td class="yellowBack">4:30</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            
+
+        </div>
+
+        <!-- Libs -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/select2.full.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- App scripts -->
+        <script src="js/reservaDeCitas.js"></script>
+    </body>
+
+</html>
