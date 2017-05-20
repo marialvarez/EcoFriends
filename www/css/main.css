@@ -16,6 +16,33 @@
 
 .registro h1{
     font-family: 'Open-Sans';
-    font-weight: lighter;
+    font-weight:
     font-size: 100px;
+}
+
+#login{
+    background-image: url(../img/bg_home.jpg);
+    background-size:cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#login div a{
+    background-color: #000;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+}
+
+#login div{
+    background-color: red;
+    margin: 10px 0;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
