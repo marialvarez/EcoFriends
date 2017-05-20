@@ -18,10 +18,12 @@
     </div>
     <ul class="list-news">
         <li ng-repeat="reto in retosIndividuales">
-            <span class="label label-default pull-right">NIVEL 1   </span>
-            <img src="img/icon-reto.png" alt="">
-            <h4 class="title">{{ reto.title }}</h4>
-            <p>{{ reto.resume }}</p>
+            <a href="{{ reto.path }}">
+                <span class="label label-default pull-right">NIVEL 1   </span>
+                <img src="img/icon-reto.png" alt="">
+                <h4 class="title">{{ reto.title }}</h4>
+                <p>{{ reto.resume }}</p>
+            </a>
         </li>
     </ul>
     <br>

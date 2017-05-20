@@ -50,9 +50,9 @@ rutaApp.controller('retosHoyController', function($scope) {
         },
         {
             path:'#reto-autos',
-            title:'Come saludable',
-            resume:'Reto de la ducha',
-            description:'Tomar toda la ducha'
+            title:'Reto autos',
+            resume:'Autos',
+            description:'Para los autos'
         },
         {
             path:'#ruta',
