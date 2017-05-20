@@ -1,0 +1,105 @@
+<style>
+    *{
+        outline: 1px solid rgba(255,0,0,0.4);
+        box-sizing: border-box;
+        font-family: 'Open-Sans', sans-serif;
+    }
+    .vehiculo, .camina, .bici {
+        width: 40px;
+        height: 40px;
+    }
+    .bici {
+        padding: 10px;
+    }
+    .btn-vehiculo div, .btn-bici div, .btn-camina div {
+        padding: 10px;
+        border-radius: 100%;
+        border: 1px solid #ce920b;
+        background-color: #ce920b;
+    }
+    .btn-vehiculo span, .btn-bici span, .btn-camina span {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .row {
+        width: 100%;
+    }
+    span {
+        color: black;
+    }
+    h1, .row , h2{
+        margin-top: 40px;
+    }
+    .row a {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .row a:hover {
+        text-decoration: none;
+        color: black;
+    }
+    .firstTitle {
+        position: absolute;
+        top: 0;
+        color: white;
+        background-color: #ce920b;
+        padding: 10px;
+        width: 100%;
+    }
+    .secondTitle {
+        font-weight: bold;
+        color:#ce920b;
+    }
+
+</style>
+   <div>
+    <h1 class="text-center firstTitle">Empieza a ayudar</h1>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 col-xs-4 text-center">
+                 <a class="btn btn-vehiculo" href="">
+                     <div>
+                         <img class="vehiculo" src="img/img_reto_autos/carro.png" alt="">   
+                     </div>
+                     
+                     <br>
+                     <br>
+                     <span>
+                         Compartir 
+                         <br>
+                         Vehículo
+                     </span>
+                 </a>          
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <a class="btn btn-bici" href="">
+                    <div>
+                        <img class="bici" src="img/img_reto_autos/bici.png" alt="">   
+                    </div>
+                    <br>
+                    <br>
+                    <span>
+                        Bicicleta
+                    </span>   
+                </a>         
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <a class="btn btn-camina" href="">
+                    <div>
+                        <img class="camina" src="img/img_reto_autos/caminando.png" alt="">    
+                    </div>
+                    <br>
+                    <br>
+                    <span>
+                    Caminando
+                    </span>
+                </a>         
+            </div>     
+        </div> 
+    </div>
+    
+    <h1 class="text-center secondTitle">¿Qué utilizaste hoy?</h1>
+</div>
