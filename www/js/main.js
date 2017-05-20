@@ -42,3 +42,14 @@ rutaApp.controller('detalleRetoController', function($scope) {
 rutaApp.controller('contactController', function($scope) {
 	$scope.message = 'Esta es la página de "Contacto", aquí podemos poner un formulario';
 });
+
+$(document).ready(initApp);
+
+function initApp() {
+    console.log('asdf');
+
+    $('body').on('click', '.back', function () {
+        console.log('asdf');
+        history.back();
+    });
+}
