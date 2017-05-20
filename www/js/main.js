@@ -21,6 +21,10 @@ rutaApp.config(function ($routeProvider) {
             templateUrl: 'pages/contacto.html',
             controller: 'contactController'
         })
+        .when('/reto-auto', {
+            templateUrl : 'pages/detalle-reto.html',
+            controller 	: 'detalleRetoController'
+        })
         .when('/reto_calle', {
             templateUrl: 'pages/reto_calle.html',
             controller: 'reto_calle'
@@ -35,8 +39,42 @@ rutaApp.controller('registroController', function ($scope) {
     //	$scope.message = 'Hola, Mundo!';
 });
 
-rutaApp.controller('retosHoyController', function ($scope) {
-    //	$scope.message = 'Estos son los retos de hoy';
+rutaApp.controller('retosHoyController', function($scope) {
+//	$scope.message = 'Estos son los retos de hoy';
+    $scope.retosIndividuales = [
+        {
+            path:'#ruta',
+            title:'Carrera en la ducha',
+            resume:'Controla el tiempo que estás en la ducha',
+            description:'Tomar toda la ducha'
+        },
+        {
+            path:'#ruta',
+            title:'Come saludable',
+            resume:'Reto de la ducha',
+            description:'Tomar toda la ducha'
+        },
+        {
+            path:'#ruta',
+            title:'Si ya cargo desconectalo',
+            resume:'Reto de la ducha',
+            description:'Tomar toda la ducha'
+        },
+        {
+            path:'#ruta',
+            title:'Reto de la ducha',
+            resume:'Reto de la ducha',
+            description:'Tomar toda la ducha'
+        }
+    ];
+    $scope.retosGrupales = [
+        {
+            path:'#ruta',
+            title:'Limpia un punto negro',
+            resume:'Elige',
+            description:'Tomar toda la ducha'
+        }
+    ];
 });
 
 rutaApp.controller('reto_calle', function ($scope) {
@@ -66,10 +104,7 @@ rutaApp.controller('contactController', function($scope) {
 $(document).ready(initApp);
 
 function initApp() {
-    console.log('asdf');
-
     $('body').on('click', '.back', function () {
-        console.log('asdf');
         history.back();
     });
 }
