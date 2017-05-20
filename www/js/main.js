@@ -17,6 +17,10 @@ rutaApp.config(function ($routeProvider) {
             templateUrl: 'pages/detalle-reto.html',
             controller: 'detalleRetoController'
         })
+        .when('/puntos-reciclaje', {
+            templateUrl: 'pages/punto-reciclaje.html',
+            controller: 'puntosController'
+        })
         .when('/contacto', {
             templateUrl: 'pages/contacto.html',
             controller: 'contactController'
