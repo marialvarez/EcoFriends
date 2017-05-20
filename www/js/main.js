@@ -40,15 +40,21 @@ rutaApp.controller('retosHoyController', function ($scope) {
 });
 
 rutaApp.controller('reto_calle', function ($scope) {
-    var i = 0;
+    var i = 1;
+    var acumulador;
     var botella = '../../img/botella.png';
     var botellaX = '../../img/botellaX.png';
     $(".botella img").click(function () {
         if ($(this).attr('src') == botella) {
-            $(this).attr('src', 'botellaX');
+            $(this).attr('src', botellaX);
+            acumulador = i++;
+            console.log('suma:'+acumulador);
         } else {
-            $(this).attr('src', 'botella');
+            $(this).attr('src', botella);
+            acumulador = i--;
+            console.log('resta:'+acumulador);
         };
+        console.log(acumulador);
     });
 });
 rutaApp.controller('detalleRetoController', function ($scope) {
