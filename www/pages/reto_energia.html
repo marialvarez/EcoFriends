@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+	<title>Ahorra Energía</title>
+	<style type="text/css">
+        body{
+            color: greenyellow;
+        }
+        #logo {
+            width: 520px;
+            height: 70px;
+            margin: 100px 90px;
+        }
+        h1, label, h4 {
+            color: forestgreen;
+            font-family: cursive;
+        }
+        button, input {
+          font-family : inherit;
+          font-size   : 100%;
+        }
+        button {
+          position     : absolute;
+          left         : 250px;
+          top          : 180px;
+          padding      : 11px;
+          font         : bold 2em sans-serif;
+          border       : 2px solid forestgreen;
+          border-radius: 5px;
+          background   : none;
+          cursor       : pointer;
+          color: greenyellow;
+        }
+        button:hover,
+        button:focus {
+          outline   : none;
+          background: white;
+          color   : greenyellow;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			  <hr><hr><hr>
+				<h1>Ahorra Energía</h1>
+				<p>¿Cómo puedo lograrlo?</p>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5 col-md-offset-2">
+				<div class="form-group">
+					<label for="dia">Qué aparato está cargando:</label>
+					<select class="form-control" id="dia">
+						<option >Laptop</option>
+						<option>Celular</option>
+						<option >Cámara fotográfica</option>
+						<option>Banco de carga</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="vacaciones">¿Cuánto tiempo tarda en cargar?</label>
+					<select class="form-control" id="vacaciones">
+						<option>1 hora</option>
+						<option>2 horas</option>
+				        <option>3 horas</option>
+						<option>4 horas</option>
+				        <option>8 horas</option>
+					</select>
+				</div>
+				<button onclick="calcular()">00:00</button>
+			</div>
+			<div class="col-md-3 text-center">
+				<h4>20 de Mayo 2017</h4>
+			      <img id="perro" src="img/Perro%20-%20Estoy%20feliz%20por%20mis%20amigos.jpg">
+				<h4>Estoy feliz por mis amigos</h4>
+	        </div>
+	   </div> 
+    </div>
+</body>
+</html>
