@@ -29,6 +29,16 @@ button:focus, button:active { outline:none; }
     color: #FFF;
 }
 
+.btn-iniciar
+{
+    font-size:20px;
+    padding:10px 15px;
+    min-width:250px;
+    background: #59C434;
+    color: #FFF;
+    border-radius: 200px;
+}
+
 .block-level
 {
     width:100%;
