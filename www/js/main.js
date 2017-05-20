@@ -75,8 +75,8 @@ rutaApp.controller('retosHoyController', function($scope) {
         },
         {
             path:'#reto-calle',
-            title:'Si ya cargo desconectala',
-            resume:'Desconecta tu laptop cuando está cargada',
+            title:'Cuida tu calle',
+            resume:'Cuantas botellas usas',
             description:'Tomar toda la ducha'
         }
     ];
