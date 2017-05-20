@@ -58,10 +58,10 @@ rutaApp.controller('retosHoyController', function($scope) {
             description:'Para los autos'
         },
         {
-            path:'#ruta',
-            title:'Si ya cargo desconectalo',
-            resume:'Reto de la ducha',
-            description:'Tomar toda la ducha'
+            path:'#puntos-reciclaje',
+            title:'Puntos de reciclaje',
+            resume:'Ubica los putos de reciclaje más cercanos',
+            description:'Conoce los lugares más cercanos'
         },
         {
             path:'#ruta',
