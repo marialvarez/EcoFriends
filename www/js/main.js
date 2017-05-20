@@ -10,7 +10,7 @@ rutaApp.config(function($routeProvider) {
 			controller 	: 'registroController',
 		})
 		.when('/retosParaHoy', {
-			templateUrl : 'pages/retosParaHoy.html',
+			templateUrl : 'pages/retos_hoy.html',
 			controller 	: 'retosHoyController'
 		})
 		.when('/contacto', {
