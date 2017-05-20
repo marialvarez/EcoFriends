@@ -277,6 +277,7 @@ hr
 .list-news { list-style: none; padding: 0; margin: 0 0 10px 0; }
 .list-news li { position: relative;
     background: #F5F5F5;
+    margin-bottom:5px;
     padding:10px;}
 .list-news li:before, .list-news li:after { content: ' '; display: table; clear: both; }
 .list-news li p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin: 0; opacity: 0.6; }

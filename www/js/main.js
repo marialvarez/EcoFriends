@@ -13,6 +13,10 @@ rutaApp.config(function($routeProvider) {
 			templateUrl : 'pages/retos_hoy.html',
 			controller 	: 'retosHoyController'
 		})
+        .when('/detalle-reto', {
+            templateUrl : 'pages/detalle-reto.html',
+            controller 	: 'detalleRetoController'
+        })
 		.when('/contacto', {
 			templateUrl : 'pages/contacto.html',
 			controller 	: 'contactController'
