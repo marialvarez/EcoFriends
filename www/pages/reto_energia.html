@@ -6,7 +6,47 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="main.css">
-	<title>Ahorra Energía</title>
+	<title>¡Si ya cargaste, desenchufa!</title>
+	
+	<script>
+        var inicio=0;
+        var timeout=0;
+
+        function empezarDetener(elemento)
+        {
+            if(timeout==0)
+            {
+
+                elemento.value="Detener";
+
+                inicio=vuelta=new Date().getTime();
+
+                funcionando();
+            }else{
+
+                elemento.value="Empezar";
+                clearTimeout(timeout);
+                timeout=0;
+            }
+        }
+
+        function funcionando()
+        {
+            var actual = new Date().getTime();
+
+            var diff=new Date(actual-inicio);
+
+            var result=LeadingZero(diff.getUTCHours())+":"+LeadingZero(diff.getUTCMinutes())+":"+LeadingZero(diff.getUTCSeconds());
+            document.getElementById('crono').innerHTML = result;
+
+            timeout=setTimeout("funcionando()",1000);
+        }
+
+        function LeadingZero(Time) {
+            return (Time < 10) ? "0" + Time : + Time;
+        }
+	</script>
+	
 	<style type="text/css">
         body{
             color: #F1C40F;
@@ -42,6 +82,8 @@
           background: white;
           color   : #F1C40F;
         }
+        
+        .crono_wrapper {text-align:center;width:500px;}
     </style>
 </head>
 <body>
@@ -75,7 +117,10 @@
 				        <option>8 horas</option>
 					</select>
 				</div>
-				<button onclick="calcular()">00:00</button>
+				<div class="crono_wrapper">
+                    <h2 id='crono'>00:00:00</h2>
+                    <input type="button" value="Empezar" onclick="empezarDetener(this);">
+                </div>
 			</div>
 			<div class="col-md-3 text-center">
 				<h4>20 de Mayo 2017</h4>

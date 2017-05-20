@@ -29,6 +29,10 @@ rutaApp.config(function ($routeProvider) {
             templateUrl : 'pages/reto_autos.html',
             controller 	: 'autoController'
         })
+        .when('/reto-energia', {
+            templateUrl : 'pages/reto_energia.html',
+            controller 	: 'energiaController'
+        })
         .when('/reto_calle', {
             templateUrl: 'pages/reto_calle.html',
             controller: 'reto_calle'
@@ -46,7 +50,7 @@ rutaApp.controller('retosHoyController', function($scope) {
 //	$scope.message = 'Estos son los retos de hoy';
     $scope.retosIndividuales = [
         {
-            path:'#ruta',
+            path:'#detalle-reto',
             title:'Carrera en la ducha',
             resume:'Controla el tiempo que estás en la ducha',
             description:'Tomar toda la ducha'
@@ -58,15 +62,15 @@ rutaApp.controller('retosHoyController', function($scope) {
             description:'Para los autos'
         },
         {
-            path:'#ruta',
-            title:'Si ya cargo desconectalo',
-            resume:'Reto de la ducha',
-            description:'Tomar toda la ducha'
+            path:'#puntos-reciclaje',
+            title:'Puntos de reciclaje',
+            resume:'Ubica los putos de reciclaje más cercanos',
+            description:'Conoce los lugares más cercanos'
         },
         {
-            path:'#ruta',
-            title:'Reto de la ducha',
-            resume:'Reto de la ducha',
+            path:'#reto-energia',
+            title:'Si ya cargo desconectala',
+            resume:'Desconecta tu laptop cuando está cargada',
             description:'Tomar toda la ducha'
         }
     ];
