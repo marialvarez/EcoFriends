@@ -24,11 +24,11 @@ rutaApp.config(function($routeProvider) {
 
 
 rutaApp.controller('registroController', function($scope) {
-	$scope.message = 'Hola, Mundo!';
+//	$scope.message = 'Hola, Mundo!';
 });
 
 rutaApp.controller('retosHoyController', function($scope) {
-	$scope.message = 'Estos son los retos de hoy';
+//	$scope.message = 'Estos son los retos de hoy';
 });
 
 rutaApp.controller('contactController', function($scope) {

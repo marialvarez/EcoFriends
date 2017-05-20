@@ -1,3 +1,21 @@
-body {
-    height: 100%;
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(../fonts/Open_Sans/OpenSans-Semibold.ttf);
+    font-weight: bold;
+}
+
+.registro h1{
+    font-family: 'Open-Sans';
+    font-weight: lighter;
+    font-size: 100px;
 }
