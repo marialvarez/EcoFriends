@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 { font-family: Raleway, sans-serif; font-weight: 400; color: 
 
 
 a, a:visited{
-    color: #FBAA2A;
+    color: #333;
     text-decoration: none;
     outline:none;
 }
@@ -55,6 +55,30 @@ hr
 {
     background: none;
     padding:10px;
+}
+
+.nav-footer
+{
+    position: absolute;
+    width:100%;
+    z-index: 999;
+}
+.nav-footer ul{
+    list-style: none;
+    margin:0;
+    width:100%;
+    padding:0;
+    display: table;
+}
+.nav-footer li
+{
+    display: table-cell;
+}
+.nav-footer li a
+{
+    text-transform: uppercase;
+    font-size:10px;
+    font-weight:bold;
 }
 
 /* Utilitatrios */
