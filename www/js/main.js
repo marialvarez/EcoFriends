@@ -21,9 +21,9 @@ rutaApp.config(function ($routeProvider) {
             templateUrl: 'pages/contacto.html',
             controller: 'contactController'
         })
-        .when('/reto-auto', {
-            templateUrl : 'pages/detalle-reto.html',
-            controller 	: 'detalleRetoController'
+        .when('/reto-autos', {
+            templateUrl : 'pages/reto-autos.html',
+            controller 	: 'autoController'
         })
         .when('/reto_calle', {
             templateUrl: 'pages/reto_calle.html',
@@ -49,7 +49,7 @@ rutaApp.controller('retosHoyController', function($scope) {
             description:'Tomar toda la ducha'
         },
         {
-            path:'#ruta',
+            path:'#reto-autos',
             title:'Come saludable',
             resume:'Reto de la ducha',
             description:'Tomar toda la ducha'
