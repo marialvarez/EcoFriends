@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="main.css">
-	<title>¡Si ya cargaste, desenchufa!</title>
-	
+<div class="nav-bar">
+    <button class="back block"><i class="icon-angle-left"></i></button>
+    <div class="block">
+        <div class="title">RETO DE LA DUCHA</div>
+        <span>Controla el tiempo que usas para ducharte</span>
+    </div>
+</div>
 	<script>
         var inicio=0;
         var timeout=0;
@@ -60,11 +57,11 @@
             color: #EF7926;
             font-family: cursive;
         }
-        button, input {
+        .energia button, .energia input {
           font-family : inherit;
           font-size   : 100%;
         }
-        button {
+        .energia button {
           position     : absolute;
           left         : 250px;
           top          : 180px;
@@ -76,8 +73,8 @@
           cursor       : pointer;
           color: #F1C40F;
         }
-        button:hover,
-        button:focus {
+        .energia button:hover,
+        .energia button:focus {
           outline   : none;
           background: white;
           color   : #F1C40F;
@@ -85,9 +82,7 @@
         
         .crono_wrapper {text-align:center;width:500px;}
     </style>
-</head>
-<body>
-	<div class="container">
+	<div class="container energia">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 			  <hr><hr><hr>
@@ -129,5 +124,3 @@
 	        </div>
 	   </div> 
     </div>
-</body>
-</html>

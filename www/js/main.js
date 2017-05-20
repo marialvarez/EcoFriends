@@ -33,7 +33,7 @@ rutaApp.config(function ($routeProvider) {
             templateUrl : 'pages/reto_energia.html',
             controller 	: 'energiaController'
         })
-        .when('/reto_calle', {
+        .when('/reto-calle', {
             templateUrl: 'pages/reto_calle.html',
             controller: 'reto_calle'
         })
@@ -69,6 +69,12 @@ rutaApp.controller('retosHoyController', function($scope) {
         },
         {
             path:'#reto-energia',
+            title:'Si ya cargo desconectala',
+            resume:'Desconecta tu laptop cuando está cargada',
+            description:'Tomar toda la ducha'
+        },
+        {
+            path:'#reto-calle',
             title:'Si ya cargo desconectala',
             resume:'Desconecta tu laptop cuando está cargada',
             description:'Tomar toda la ducha'

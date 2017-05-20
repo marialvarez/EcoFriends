@@ -1,12 +1,10 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html ng-app='angularRoutingApp'>
-<head>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body ng-controller='mainController'>
+<div class="nav-bar">
+    <button class="back block"><i class="icon-angle-left"></i></button>
+    <div class="block">
+        <div class="title">PUNTOS DE RECICLAJE</div>
+        <span>Ubica los puntos de reciclaje más cercanos</span>
+    </div>
+</div>
 	<header>
 		<h1>Encuentra tu punto de reciclaje</h1>
 							<select>
@@ -28,19 +26,3 @@
 				<button id="buscar" class="btn btn-warning">BUSCAR</button>
 			</div>
 	</header>
-
-	<div id="main">
-	    <!-- Aquí inyectamos las vistas -->
-		<div ng-view>
-		    
-		</div>
-	</div>
-     
-	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
- 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
-  	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
-  	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
-  	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDjhLZdzD1Knb8c128oNAJ8cwO6lqYieu8"></script>
-  	<script src="js/main.js"></script>
-</body>
-</html>
