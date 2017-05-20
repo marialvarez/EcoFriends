@@ -21,6 +21,10 @@ rutaApp.config(function ($routeProvider) {
             templateUrl: 'pages/contacto.html',
             controller: 'contactController'
         })
+        .when('/reto-auto', {
+            templateUrl : 'pages/detalle-reto.html',
+            controller 	: 'detalleRetoController'
+        })
         .when('/reto_calle', {
             templateUrl: 'pages/reto_calle.html',
             controller: 'reto_calle'
