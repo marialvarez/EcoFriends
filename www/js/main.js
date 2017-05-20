@@ -17,6 +17,10 @@ rutaApp.config(function($routeProvider) {
 			templateUrl : 'pages/contacto.html',
 			controller 	: 'contactController'
 		})
+        .when('/reto_calle',{
+            templateUrl : 'pages/reto_calle.html',
+            controller : 'reto_calle'
+        })
 		.otherwise({
 			redirectTo: '/'
 		});
@@ -28,6 +32,10 @@ rutaApp.controller('registroController', function($scope) {
 });
 
 rutaApp.controller('retosHoyController', function($scope) {
+//	$scope.message = 'Estos son los retos de hoy';
+});
+
+rutaApp.controller('reto_calle', function($scope){
 //	$scope.message = 'Estos son los retos de hoy';
 });
 
