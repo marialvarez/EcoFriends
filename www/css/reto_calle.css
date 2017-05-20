@@ -25,11 +25,11 @@
 }
 
 #pop buttom{
-    background-color: #FBAA2A;
+    background-color: #5ac335;
     padding: 10px 50px;
     color: #fff;
-    position: relative;
-    top: 30px;
+/*    position: relative;*/
+/*    top: 10px;*/
     font-size: 17px;
     text-transform: uppercase;
     border-radius: 50px;
