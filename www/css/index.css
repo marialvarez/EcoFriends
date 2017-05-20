@@ -56,7 +56,12 @@ hr
     background: none;
     padding:10px;
 }
-
+.section-title
+{
+    text-transform: uppercase;
+    font-size:16px;
+    color: #000;
+}
 .nav-footer
 {
     position: fixed;
@@ -109,91 +114,22 @@ hr
 .text-center{ text-align: center;}
 .text-right{ text-align: right;}
 .text-left{ text-align: left;}
-.spacer{
-    margin:0 5px;
-    opacity:0.6;
-}
+.spacer{ margin:0 5px; opacity:0.6; }
 
-.dialog
-{
-    position: fixed;
-    display: none;
-    height:100%;
-    width:100%;
-    z-index: 1002;
-    color: #FFF;
-    padding:15px;
-}
-.dialog.open
-{
-    display: table;
-}
-.dialog .content
-{
-    vertical-align: middle;
-    display: table-cell;
-}
+.dialog { position: fixed; display: none; height:100%; width:100%; z-index: 1002; color: #FFF; padding:15px; }
+.dialog.open { display: table; }
+.dialog .content { vertical-align: middle; display: table-cell; }
 
-.gallery-slide
-{
-    display: none;
-    background: #000;
-    position: fixed;
-    height:100%;
-    width:100%;
-    z-index: 1002;
-    color: #FFF;
-}
-.gallery-slide button
-{
-    position: absolute;
-    top:10px;
-    left:10px;
-    z-index:1010;
-}
-.gallery-slide .content
-{
-    position: absolute;
-    width:100%;
-    top:50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.gallery-slide img
-{
-    width:100%;
-}
-
-.nav-bar {  padding:5px 0;
-    vertical-align: bottom;
-    top:0;
-    position: relative;
-    width:100%;
-    z-index:998;
-    background-image: linear-gradient(-180deg, #f8b155 6%, #FAAA2A 98%);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.22);
-    display: table;
+.nav-bar { color:#FFF; padding:5px 0; vertical-align: bottom; top:0; position: relative; width:100%; z-index:998; background-image: linear-gradient(-180deg, #f8b155 6%, #FAAA2A 98%); box-shadow: 0 2px 4px 0 rgba(0,0,0,0.22); display: table;
     /*transition: all 0.6s;*/
 }
 .nav-bar .block { display: table-cell; vertical-align: middle;  }
-.nav-bar .title { transition: all 0.4s; color:#FFF; width:100%;}
+.nav-bar .title { transition: all 0.4s;  width:100%;}
 .nav-bar.fixed { position: fixed; }
 .nav-bar.transparent { background-image: linear-gradient(-180deg, rgba(0,0,0,0), rgba(0,0,0,0)); box-shadow: none; }
 .nav-bar.transparent .title { text-shadow: 0 1px 3px rgba(0,0,0,0.3); }
-.nav-bar button{
-    color: #FFF;
-    background: none;
-    border:none;
-    border-radius: 3px;
-    margin:0 3px;
-    font-size:20px;
-    line-height:40px;
-    padding:0 15px;
-}
-.nav-bar button i
-{
-    vertical-align: baseline;
-}
+.nav-bar button{ color: #FFF; background: none; border:none; border-radius: 3px; margin:0 3px; font-size:25px; line-height:45px; padding:0 15px; }
+.nav-bar button i { vertical-align: baseline; }
 .nav-bar button:focus, .nav-bar button:active{
     background: rgba(255,255,255,0.4);
 }
@@ -285,23 +221,19 @@ hr
 .list-news li img { width: 40px; float: left; margin-right: 10px; }
 .list-news li .title { font-size: 13px; text-transform: uppercase; margin: 0 0 5px 0; max-height: 30px; overflow: hidden; font-weight:600; }
 
+/*----------------- Sección detalle */
+.detalle
+{
 
-/* Sección de noticias */
-.new-info
-{
-    border-bottom:1px solid #DFDFDF;
-    padding-bottom:15px;
-    margin-bottom:10px;
 }
-.new-info small
+.detalle .description
 {
-    color: #999;
+    font-size:16px;
+    padding:20px;
+    text-align: center;
+    background: #F5F5F5;
 }
-.new-info img
-{
-    width:40px;
-    margin-right:15px;
-}
+
 
 /* --------------------------------------- Home destiny */
 .home-slide
