@@ -51,8 +51,9 @@
 #login div a{
     background-color: #000;
     position: relative;
-    top: 0px;
-    bottom: 0px;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #login div{
