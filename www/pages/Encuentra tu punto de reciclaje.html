@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app='angularRoutingApp'>
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-controller='mainController'>
+	<header>
+		<h1>Encuentra tu punto de reciclaje</h1>
+							<select>
+						<option>Seleccione</option>
+						<option>Ate Vitarte</option>
+						<option >Barranco</option>
+						<option >Callao</option>
+						<option>Cercado de Lima</option>
+						<option >Independencia</option>
+						<option >Jesús María</option>
+						<option>La Molina</option>
+						<option>Los Olivos</option>
+						<option>Magdalena</option>
+						<option>Puente Piedra</option>
+						<option>San Juan de Lurigancho</option>
+					</select>
+					<h4>DESTINO</h4>
+                  <div>
+				<button id="buscar" class="btn btn-warning">BUSCAR</button>
+			</div>
+	</header>
+
+	<div id="main">
+	    <!-- Aquí inyectamos las vistas -->
+		<div ng-view>
+		    
+		</div>
+	</div>
+     
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+ 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
+  	<script src="js/main.js"></script>
+</body>
+</html>
