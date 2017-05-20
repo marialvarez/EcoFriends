@@ -14,19 +14,21 @@
     </div>
 
     <div class="container">
-        <h3 class="section-title">Individuales</h3>
+        <h3 class="section-title">Para hacer solo</h3>
     </div>
     <ul class="list-news">
         <li ng-repeat="reto in retosIndividuales">
-            <span class="label label-default pull-right">NIVEL 1   </span>
-            <img src="img/icon-reto.png" alt="">
-            <h4 class="title">{{ reto.title }}</h4>
-            <p>{{ reto.resume }}</p>
+            <a href="{{ reto.path }}">
+                <span class="label label-default pull-right">NIVEL 1   </span>
+                <img src="img/icon-reto.png" alt="">
+                <h4 class="title">{{ reto.title }}</h4>
+                <p>{{ reto.resume }}</p>
+            </a>
         </li>
     </ul>
     <br>
     <div class="container">
-        <h3 class="section-title">Grupales</h3>
+        <h3 class="section-title">Para hacer con amigos</h3>
     </div>
     <ul class="list-news">
         <li>
